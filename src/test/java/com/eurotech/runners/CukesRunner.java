@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/eurotech/step_definitions",
         dryRun =false,
-        tags = "@dashboard"
+        tags = "@smoke"
         // tags = "@wip"
         // tags = "@wip and @SDET"
         // tags = "@wip or @SDET"

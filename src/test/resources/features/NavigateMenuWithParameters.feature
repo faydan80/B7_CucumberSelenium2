@@ -27,7 +27,7 @@ Feature:Navigate to Menu with parameters
     Then The Welcome Message contains "Jack Bauer"
     And The user navigates to "My Account" Menu
     Then The user should be able to see the header as "Dashboard"
-
+@smoke
   Scenario Outline: Navigate Menu Different Credentials
     When The user logs in using "<userName>" and "<password>"
     Then The Welcome Message contains "<text>"

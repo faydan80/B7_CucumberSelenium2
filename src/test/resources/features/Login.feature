@@ -1,4 +1,4 @@
-@Login
+@Login @smoke
 Feature: DevEx log in test
 
   #@teacher
