@@ -7,7 +7,7 @@ Feature: Navigation Menu Test
     Then The user gets the Welcome text
     And The user navigates to Developers Menu
     Then The user gets the Developers Text
-@student
+@student @wip
   Scenario: Navigate to Student Menu
     Given The user is on Login Page
     When The user enters the student credentials

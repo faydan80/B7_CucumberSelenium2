@@ -81,15 +81,15 @@ DashboardPage dashboardPage=new DashboardPage();
 
     }
     @Then("The user navigates to {string} Menu")
-    public void the_user_navigates_to_menu(String developers) {
-        dashboardPage.navigateToMenu(developers);
+    public void the_user_navigates_to_menu(String menu) {
+        dashboardPage.navigateToMenu(menu);
 
     }
     @Then("The user should be able to see the header as {string}")
     public void the_user_should_be_able_to_see_the_header_as(String headerName) {
         BrowserUtils.waitFor(2);
         String actualText=dashboardPage.getHeaderText2(headerName);
-        Assert.assertEquals("Verify that header name is displayed",headerName,"Invalid Credentials!");
+        Assert.assertEquals("Verify that header name is displayed",headerName,actualText);
 
     }
 

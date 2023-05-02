@@ -3,7 +3,7 @@ Feature:Account Type
 
   Background:
     Given The user is on the log in Page
-
+@smoke
   Scenario: As a user,I should be able to login as a Teacher
    # Given The user is on the log in Page
     When The user logs in using "eurotech@gmail.com" and "Test12345!"
