@@ -89,7 +89,7 @@ DashboardPage dashboardPage=new DashboardPage();
     public void the_user_should_be_able_to_see_the_header_as(String headerName) {
         BrowserUtils.waitFor(2);
         String actualText=dashboardPage.getHeaderText2(headerName);
-        Assert.assertEquals("Verify that header name is displayed",headerName,"Invalid Credentials!");
+        Assert.assertEquals("Verify that header name is displayed",headerName,actualText);
 
     }
 
